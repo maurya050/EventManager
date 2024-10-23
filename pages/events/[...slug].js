@@ -26,6 +26,8 @@ function FilteredEventPage(){
         return <p>Invalid Filter !!!</p>
     }
 
+    
+
     return(
         <div>
             <h1>All Event page based on Filter...</h1>

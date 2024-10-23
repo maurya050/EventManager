@@ -10,8 +10,9 @@ function EventSearch(props) {
     const submitHandler = (e) => {
         e.preventDefault();
         const selectedyear = yearInput.current.value;
+        console.log(selectedyear);
         const selectedmonth = monthInput.current.value;
-        console.log(selectedmonth, selectedyear);
+        //console.log(+selectedmonth, selectedyear);
         props.onSearch(selectedyear, selectedmonth);
         
     }
@@ -30,16 +31,16 @@ function EventSearch(props) {
           <select id="month" ref={monthInput}>
             <option value="1">January</option>
             <option value="2">Febuary</option>
-            <option value="1">March</option>
-            <option value="1">April</option>
-            <option value="1">May</option>
-            <option value="1">June</option>
-            <option value="1">July</option>
-            <option value="1">August</option>
-            <option value="1">September</option>
-            <option value="1">October</option>
-            <option value="1">November</option>
-            <option value="1">December</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
           </select>
         </div>
       </div>

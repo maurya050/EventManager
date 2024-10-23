@@ -8,7 +8,9 @@ function EventsPage(){
     const events = getAllEvents();
     const router = useRouter();
 
-    const findEventHandler = ({year, month}) => {
+    const findEventHandler = (year, month) => {
+
+        //console.log(year , month)
 
         const fullpath = `/events/${year}/${month}`;
 
