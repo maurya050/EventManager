@@ -11,7 +11,7 @@ function EventSearch(props) {
         e.preventDefault();
         const selectedyear = yearInput.current.value;
         const selectedmonth = monthInput.current.value;
-
+        console.log(selectedmonth, selectedyear);
         props.onSearch(selectedyear, selectedmonth);
         
     }
